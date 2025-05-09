@@ -1,19 +1,19 @@
-import img from "./assets/green-hands.png";
+import img from "./assets/2025-04-08.jpg";
 
 export const environmentalImpactSection = {
-  title: "Environmental Impact",
-  subheading1_1: "Choosing [Company Name] for a",
-  subheading1_2: " Greener Tomorrow",
+  title: "Tu tranquilidad es nuestra prioridad en cada destino",
+  subheading1_1: "Más que una agencia de viajes, ",
+  subheading1_2: "somos creadores de experiencias inolvidables",
   description:
-    "At [Company Name], we are committed to making a positive impact on the environment. By choosing our sustainable energy solutions, you contribute to:",
+    "Entendemos que un viaje es mucho más que reservar vuelos y hoteles. Es descubrir nuevos horizontes, conectar con culturas fascinantes y crear recuerdos que te acompañarán siempre. Por eso, cada aspecto de tu experiencia está diseñado con pasión y atención al detalle, para que tú solo te preocupes por disfrutar.",
   impactPoints: [
-    "Reducing Carbon Emissions",
-    "Conserving Natural Resources",
-    "Preserving Biodiversity",
-    "Mitigating Climate Change",
-    "Promoting a Cleaner and Healthier Planet",
+    "Expertos locales en cada destino",
+    "Atención personalizada 24/7",
+    "Itinerarios diseñados a tu medida",
+    "Flexibilidad sin complicaciones",
+    "Experiencias exclusivas",
   ],
   visual: img,
-  callToAction: "Join Us in Building a Sustainable Future",
-  button: "Learn More",
+  callToAction: "Nuestro equipo está disponible en cualquier momento, en cualquier zona horaria, para asegurarnos de que tu única preocupación sea decidir qué foto compartir primero.",
+  button: "Planifica tu viaje con expertos",
 };
