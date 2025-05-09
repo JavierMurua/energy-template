@@ -14,13 +14,13 @@ const { title, description, visual } = Astro.props;
 ---
 
 <div
-  class="group overflow-hidden rounded-lg h-full flex flex-col dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-2"
+  class="group overflow-hidden rounded-lg h-full flex flex-col bg-base-600 dark:bg-secondary-900 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-2"
 >
   <div class="grid grid-cols-1 content-between h-full mx-6 mb-6">
     <div class="flex">
-      <div class="h-[50px] w-[50px] m-6">
+      <div class="h-[50px] w-[50px] m-6 bg-base-400 dark:bg-primary-700 rounded-full">
         <div
-          class="fill:accent dark:fill-accent-light dark:opacity-70 shrink-0 h-full"
+          class="fill:accent dark:fill-accent  shrink-0 h-full"
         >
           <Fragment set:html={visual} />
         </div>
@@ -31,7 +31,7 @@ const { title, description, visual } = Astro.props;
     </div>
 
     <div class="self-baseline">
-      <div class="text-sm opacity-60">
+      <div class="text-md opacity-60">
         {description}
       </div>
     </div>

@@ -1,29 +1,29 @@
-import svg1 from "./assets/green-1.svg?raw";
+import svg1 from "./assets/pig-piggy-bank-svgrepo-com.svg?raw";
 import svg2 from "./assets/green-2.svg?raw";
-import svg3 from "./assets/green-3.svg?raw";
-import svg4 from "./assets/green-4.svg?raw";
+import svg3 from "./assets/toast-alcohol-svgrepo-com.svg?raw";
+import svg4 from "./assets/travel-suitcase-1-svgrepo-com.svg?raw";
 
 export const getInvolvedSection = {
-  title: "Get Involved",
-  subheading1_1: "Join Us ",
-  subheading1_2: "in Building a Sustainable Future",
+  title: "¿Qué te detiene para vivir tu próxima gran aventura?",
+  subheading1_1: "Tenemos la respuesta a tus inquietudes más comunes ",
+  subheading1_2: "para que des el paso con total confianza",
   initiatives: [
     {
-      title: "Community Outreach",
+      title: "Flexibilidad financiera a tu medida",
       description:
-        "Discover our community initiatives aimed at promoting awareness and education on sustainable living. Join us in creating a positive impact together.",
-      visual: svg2,
+        "Creemos que las experiencias extraordinarias deberían ser accesibles para todos. Por eso ofrecemos planes de pago flexibles, reservas con mínimo anticipo y la garantía de mejor precio. ¡Y sin costos ocultos!",
+      visual: svg1,
     },
     {
-      title: "Green Events",
+      title: "Tranquilidad garantizada, sin excepciones",
       description:
-        "Participate in our upcoming green events. From tree-planting drives to eco-friendly workshops, be a part of the movement towards a healthier planet.",
+        "Entendemos que los planes pueden cambiar. Nuestra política de cancelación flexible te protege ante cualquier imprevisto. Además, nuestro equipo de asistencia 24/7 estará siempre disponible en tu destino.",
       visual: svg4,
     },
     {
-      title: "Partnerships for Sustainability",
+      title: "Momentos que el dinero no puede comprar",
       description:
-        "Explore our partnerships with organizations dedicated to environmental conservation. Learn how you can contribute to sustainable practices through collaboration.",
+        "Acceso exclusivo a experiencias privadas, eventos locales cerrados al turismo convencional y encuentros con personas que transformarán tu perspectiva. No viajes como turista, vive como local.",
       visual: svg3,
     },
   ],
