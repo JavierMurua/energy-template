@@ -42,7 +42,7 @@ const navItems = [
 
 ---
 
-<header class="absolute inset-x-0 top-0 z-50 py-6 px-6">
+<header class="fixed inset-x-0 top-0 z-50 py-6 px-6 xl:bg-inherit border-b-2 border-b-accent">
   <!-- <Container> -->
   <nav class="w-full flex justify-between gap-6 relative">
     <!-- logo -->
@@ -76,15 +76,15 @@ const navItems = [
     <div
       data-nav-overlay
       aria-hidden="true"
-      class="fixed hidden inset-0 lg:!hidden bg-box-bg bg-opacity-50 backdrop-filter backdrop-blur-xl"
+      class="fixed hidden inset-0 xl:!hidden bg-box-bg bg-opacity-50 backdrop-filter backdrop-blur-xl"
     >
     </div>
     <div
       data-navbar
-      class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent border-x border-x-box-border lg:border-x-0"
+      class="flex h-0 overflow-hidden xl:!h-auto xl:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 xl:flex-row w-full xl:justify-between xl:items-center absolute xl:relative top-full xl:top-0 bg-body xl:bg-transparent border-x border-x-box-border xl:border-x-0"
     >
       <ul
-        class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-heading-2 w-full lg:justify-end lg:items-center"
+        class="border-t border-box-border xl:border-t-0 px-6 xl:px-0 pt-6 xl:pt-0 flex flex-col xl:flex-row gap-y-4 gap-x-3 text-xl text-heading-2 w-full xl:justify-end xl:items-center"
       >
         {
           navItems.map((item) => {
@@ -94,12 +94,12 @@ const navItems = [
       </ul>
 
       <div
-        class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0"
+        class="xl:min-w-max flex items-center sm:w-max w-full pb-6 xl:pb-0 border-b border-box-bg xl:border-0 px-6 xl:px-0"
       >
         <BtnLink
-          text="Get Started"
+          text="WhatsApp"
           href="#cta"
-          className="flex justify-center w-full sm:w-max text-lg text-heading-2"
+          className="flex justify-center w-full sm:w-max text-xl text-heading-2"
           variant="cta"
         />
       </div>
@@ -113,19 +113,19 @@ const navItems = [
       <button
         data-toggle-nav
         data-open-nav="false"
-        class="lg:hidden lg:invisible outline-none w-7 h-auto flex flex-col relative"
+        class="xl:hidden xl:invisible outline-none w-7 h-auto flex flex-col relative"
       >
         <span
           id="line1"
-          class="w-6 h-0.5 rounded-full bg-heading-2 transition-all duration-300 ease-linear bg-black dark:bg-white"
+          class="w-6 h-0.5 rounded-full bg-heading-2 transition-all duration-300 ease-linear bg-primary-600 dark:bg-cta"
         ></span>
         <span
           id="line2"
-          class="w-6 origin-center mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear bg-black dark:bg-white"
+          class="w-6 origin-center mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear bg-primary-600 dark:bg-cta"
         ></span>
         <span
           id="line3"
-          class="w-6 mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear bg-black dark:bg-white"
+          class="w-6 mt-1 h-0.5 rounded-ful bg-heading-2 transition-all duration-300 ease-linear bg-primary-600 dark:bg-cta"
         ></span>
         <span class="sr-only">togglenav</span>
       </button>

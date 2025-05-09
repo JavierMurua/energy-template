@@ -8,7 +8,7 @@ const { className, variant } = Astro.props;
 
 const getThemeStyle = (variant: "primary" | "secondary" | "cta") => {
   if (variant === "primary") {
-    return "bg-transparent border-primary hover:border-primary-800 hover:bg-primary-100 dark:hover:bg-primary-900";
+    return "bg-transparent border-primary hover:border-primary hover:dark:border-accent hover:bg-accent-400 dark:hover:bg-primary-900";
   }
   if (variant === "secondary") {
     return "bg-transparent border-secondary hover:border-secondary-800";
@@ -21,7 +21,7 @@ const getThemeStyle = (variant: "primary" | "secondary" | "cta") => {
 
 const getTextColor = (variant: "primary" | "secondary" | "cta") => {
   if (variant === "primary") {
-    return "text-accent dark:text-accent-light";
+    return "text-primary dark:text-accent";
   }
   if (variant === "secondary") {
     return "text-secondary dark:text-secondary-light";
