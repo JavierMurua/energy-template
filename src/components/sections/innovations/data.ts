@@ -1,32 +1,32 @@
-import imgGrid from "./assets/inno-grid.webp";
-import imgSolar from "./assets/inno-panel.webp";
-import imgWind from "./assets/inno-wind.webp";
+import imgGrid from "./assets/europa.jpg";
+import imgSolar from "./assets/asia.jpg";
+import imgWind from "./assets/caribe.jpg";
 
 export const innovationsSection = {
-  title: "Latest Innovations",
-  subheading1_1: "Discover Our Cutting-edge",
-  subheading1_2: " Green Energy Technologies",
+  title: "Destinos que transformarán tu perspectiva",
+  subheading1_1: "Experiencias cuidadosamente seleccionadas para crear recuerdos inolvidables, ",
+  subheading1_2: "con planes de pago que se adaptan a ti",
   innovations: [
     {
-      title: "Smart Grid Integration",
+      title: "Europa en verano: magia, luz y noches interminables",
       description:
-        "Revolutionize energy distribution with our smart grid technology, optimizing efficiency, minimizing wastage, and adapting to demand fluctuations. Stay connected with innovative solutions for a sustainable, cost-effective energy ecosystem. Embrace the future with our cutting-edge smart grid integration, enhancing reliability and paving the way for efficiency and sustainability.",
+        "Descubre el encanto único del verano europeo: festivales vibrantes, terrazas históricas y atardeceres que se extienden hasta la medianoche. Desde los canales de Ámsterdam hasta las playas de la Costa Amalfitana, vive la temporada donde el viejo continente despliega toda su magia. Con nuestros planes de financiamiento exclusivos, puedes dividir el costo en hasta 12 cuotas sin intereses y comenzar a vivir el sueño europeo hoy mismo.",
       visual: imgGrid,
     },
     {
-      title: "Advanced Solar Panel Design",
+      title: "Sudeste Asiático: donde lo ancestral y lo exótico se encuentran",
       description:
-        "Boost solar efficiency with our state-of-the-art solar panel designs. Our innovative technologies capture more sunlight, ensuring maximum energy production for your home or business. Experience enhanced sustainability and increased energy output with our advanced solar solutions.",
+        "Sumérgete en un mundo de contrastes fascinantes: templos milenarios junto a mercados flotantes llenos de color, playas paradisíacas de aguas cristalinas y una gastronomía que despertará todos tus sentidos. Tailandia, Vietnam y Bali te esperan con experiencias auténticas que cambiarán tu forma de ver el mundo. Aprovecha nuestras tarifas especiales con vuelos incluidos y la posibilidad de combinar múltiples destinos en un solo viaje.",
       visual: imgSolar,
     },
     {
-      title: "Next-gen Wind Turbines",
+      title: "Caribe exclusivo: paraísos más allá de lo conocido",
       description:
-        "Transform your wind energy experience with our next-generation wind turbines. Our sleek design, enhanced efficiency, and minimal environmental impact underscore our commitment to innovation. Elevate your sustainable energy journey with cutting-edge wind solutions that prioritize both performance and environmental responsibility.",
+        "Olvida el Caribe convencional. Te llevamos a los rincones más preservados y exclusivos: bahías privadas, resorts boutique y experiencias personalizadas en islas donde la naturaleza sigue reinando. Desde las aguas multicolor de Los Roques hasta los cayos secretos de Belice, descubre la verdadera definición de paraíso. Reserva con anticipación y accede a nuestras promociones de 2x1 en noches de alojamiento para estancias superiores a 7 días.",
       visual: imgWind,
     },
   ],
   visual: "innovations-section-image.jpg",
-  callToAction: "Explore the Future of Green Energy with [Company Name]",
-  button: "Learn More",
+  callToAction: "Experiencias extraordinarias en destinos incomparables con VyT",
+  button: "Conocer más",
 };
