@@ -1,4 +1,5 @@
 ---
+// src\components\sections\services\components\ServiceCard.astro
 import Paragraph from "../../../shared/Paragraph.astro";
 import { Image } from "astro:assets";
 import Title2 from "../../../shared/Title2.astro";
@@ -40,18 +41,20 @@ const animation = `duration-300 ease-linear`;
   /> -->
   <div
     class=`
-  absolute top-0 h-full w-full bg-gradi
-  bg-gradient-to-b from-black/20 to-black/60 
-  ${animation} group-hover:bg-black/60
+  absolute top-0 left-0 w-full h-full
+  bg-gradient-to-b from-primary/10 to-primary/100 dark:from-accent/0 dark:to-accent-800/100
+  opacity-100 lg:opacity-0 lg:group-hover:opacity-100
+  transition-opacity duration-300 ease-linear
+  pointer-events-none
   `
   >
   </div>
   <div
     class=`
-    absolute flex flex-col bottom-0 w-full 
-    translate-y-[calc(100%-7.5rem)] group-hover:translate-y-0
-    content-center
-    ${animation}
+    absolute flex flex-col bottom-0 w-full content-center
+    translate-y-0 lg:translate-y-[calc(100%-7.5rem)] 
+    lg:group-hover:translate-y-0
+    transition-transform duration-300 ease-linear
     `
   >
     <div class=`m-6 text-white ${animation}`>
@@ -60,7 +63,7 @@ const animation = `duration-300 ease-linear`;
       </Title3>
     </div>
     <div
-      class=`self-baseline m-6 opacity-0 group-hover:opacity-100 ${animation}`
+      class=`self-baseline m-6 lg:opacity-0 lg:group-hover:opacity-100 ${animation}`
     >
       <div class="text-md text-white">
         {description}

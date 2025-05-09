@@ -1,59 +1,59 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
+import img1 from "./assets/para-vos.jpg";
+import img2 from "./assets/tdh.jpg";
 // TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
+import img3 from "./assets/cuotas.jpg";
+import img4 from "./assets/destinos.jpg";
 // TODO
-import img5 from "./assets/smart-grid.png";
-import img6 from "./assets/green.png";
+import img5 from "./assets/promos.jpg";
+import img6 from "./assets/lujo.jpg";
 
 export const servicesSectionData = {
-  title: "Our Sustainable Energy Solutions",
+  title: "Experiencias diseñadas para cada tipo de viajero",
   subheading: {
-    text1_1: "Experience a Revolution in Energy Solutions - ",
-    text1_2: "Embrace Innovation, Embrace Sustainability.",
+    text1_1: "Diseñamos cada detalle para que solo te preocupes por ",
+    text1_2: "disfrutar de momentos inolvidables",
     text2:
-      "We're here to Empower Your Life and Spaces with Clean, Renewable Energy, Paving the Way for a Brighter and Greener Tomorrow.",
+      "Explora nuestras opciones cuidadosamente seleccionadas y encuentra la aventura perfecta que se adapta exactamente a lo que estás buscando.",
   },
   services: [
     {
-      title: "Solar Power Solutions",
+      title: "Para vos",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
+        "Viajes pensados según cómo te gusta viajar: en pareja, con amigos, en familia o sola.",
       visual: img1,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "TDH",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
+        "Con la experiencia de TDH detrás, viajás con el respaldo de una marca reconocida y un servicio a tu medida.",
       visual: img2,
     },
     {
-      title: "Hydropower Systems",
+      title: "Cuotas",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
+        "Planes flexibles de pago que hacen realidad tu viaje soñado sin comprometer tu economía.",
       visual: img3,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "Destinos",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
+        "Desde playas paradisíacas hasta ciudades históricas. Descubre lugares que cambiarán tu perspectiva.",
       visual: img4,
     },
     {
-      title: "Smart Grid Technology",
+      title: "Promociones",
       briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
+        "Oportunidades exclusivas con tiempo limitado. Los mejores destinos a precios que no volverás a ver.",
       visual: img5,
     },
     {
-      title: "Energy-efficient Lighting",
+      title: "Exclusivo",
       briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
+        "Servicios VIP y destinos privilegiados para quienes buscan lo extraordinario en cada detalle.",
       visual: img6,
     },
   ],
   callToAction:
-    "Discover the Future of Green Energy. Choose Your Sustainable Solution Today!",
-  buttonText: "Explore More",
+    "Viaja con la tranquilidad de tener asistencia personalizada 24/7 en cualquier rincón del mundo",
+  buttonText: "Explorar más",
 };
