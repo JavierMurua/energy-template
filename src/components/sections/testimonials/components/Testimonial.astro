@@ -1,4 +1,5 @@
 ---
+// src\components\sections\testimonials\components\Testimonial.astro
 import { Image } from "astro:assets";
 import Title3 from "../../../shared/Title3.astro";
 import LazyImage from "../../../shared/LazyImage.astro";
@@ -14,7 +15,7 @@ const { name, visual, occupation, quote } = Astro.props;
 ---
 
 <div
-  class="flex w-full max-w-[26rem] flex-col rounded-xl dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5"
+  class="flex w-full max-w-[26rem] flex-col rounded-xl bg-base-600 dark:bg-secondary-900 shadow-lg dark:shadow-dark ring-1 ring-black/5"
 >
   <div class="flex flex-row items-center overflow-hidden p-4 gap-4">
     <div class="shrink-0 h-[58px] w-[58px] rounded-full overflow-hidden">
@@ -28,7 +29,7 @@ const { name, visual, occupation, quote } = Astro.props;
     <div class="flex w-full flex-col gap-0.5">
       <div class="flex items-center justify-between">
         <h5
-          class="block text-xl font-semibold leading-snug text-primary-900 dark:text-primary-100"
+          class="block text-xl font-semibold leading-snug text-primary-900 dark:text-accent-light"
         >
           {name}
         </h5>
@@ -54,14 +55,14 @@ const { name, visual, occupation, quote } = Astro.props;
         </div>
       </div>
       <p
-        class="block font-light leading-relaxed text-primary-900 dark:text-primary-300/50"
+        class="block font-light leading-relaxed text-primary-900 dark:text-accent-300/50"
       >
         {occupation}
       </p>
     </div>
   </div>
   <div class="p-4">
-    <p class="block font-sans font-light leading-relaxed italic">
+    <p class="block text-lg font-sans font-bold leading-relaxed italic">
       "{quote}"
     </p>
   </div>
