@@ -3,32 +3,32 @@ import img2 from "./assets/wind-person.png";
 import img3 from "./assets/amazonas2.png";
 
 export const projectsSection = {
-  title: "Featured Projects",
-  subheading1_1: "Explore Our Successful ",
-  subheading1_2: "Green Energy Endeavors",
+  title: "Inspiración para tu próxima aventura",
+  subheading1_1: "Descubre consejos, guías y secretos de viajeros que ",
+  subheading1_2: "transformaron destinos en experiencias inolvidables",
   projects: [
     {
-      title: "Solar-Powered Community",
+      title: "Vehículos todoterreno: La clave para descubrir los tesoros ocultos del ecoturismo",
       description:
-        "Empowering a community with sustainable solar energy solutions. Learn how [Company Name] brought clean and affordable electricity to homes, schools, and businesses.",
-      location: "Los Angeles, California, USA",
+        "¿Planeas una aventura fuera del asfalto? Descubre cómo elegir el vehículo perfecto según el terreno, clima y duración de tu viaje. Incluimos consejos de conductores expertos que han recorrido desde las dunas del Sahara hasta los senderos helados de Islandia.",
+      location: "Ecoturismo",
       visual: img1,
     },
     {
-      title: "Wind Farm Innovation",
+      title: "Escocia en 12 postales: Los rincones más fotogénicos de las Highlands",
       description:
-        "Revolutionizing wind energy with our innovative wind farm. Discover how [Company Name] is harnessing the power of the wind to create a greener and more sustainable future.",
-      location: "Scottish Highlands, United Kingdom",
+        "Revelamos las mejores horas para capturar la luz mágica en castillos medievales, los filtros que potencian el verde esmeralda de los valles, y los alojamientos boutique con interiores que lograrán que tus seguidores pregunten inmediatamente: ¿dónde es eso? Una ruta diseñada para vivir experiencias memorables y, de paso, renovar tu feed.",
+      location: "Trucos y consejos",
       visual: img2,
     },
     {
-      title: "Hydropower Plant Success",
+      title: "El Caribe que no conoces: Viviendo el trópico como un local",
       description:
-        "A journey into our hydropower success story. Explore how [Company Name] transforms the energy of flowing water into a reliable and eco-friendly power source.",
-      location: "Amazon Rainforest, South America",
+        "La auténtica magia tropical sucede en las coloridas casas de pescadores, en los mercados donde abuelas preparan recetas centenarias y en las celebraciones espontáneas al ritmo de tambores. Nuestra guía revela cómo sumergirte en comunidades locales que han preservado tradiciones ancestrales mientras disfrutas de playas vírgenes que no aparecen en Instagram.",
+      location: "Turismo auténtico",
       visual: img3,
     },
   ],
   callToAction: "Embark on a Green Energy Journey with [Company Name]",
-  button: "View More Projects",
+  button: "Explorar todos los artículos",
 };

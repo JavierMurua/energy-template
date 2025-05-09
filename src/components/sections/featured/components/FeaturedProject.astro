@@ -17,7 +17,7 @@ const { title, description, location, visual } = Astro.props;
 ---
 
 <div
-  class="group overflow-hidden rounded-lg h-full flex flex-col dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-2"
+  class="group overflow-hidden rounded-lg h-full flex flex-col bg-base-600 dark:bg-secondary-900 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-2"
 >
   <div class="relative h-96">
     <div class="overflow-hidden">
@@ -30,19 +30,19 @@ const { title, description, location, visual } = Astro.props;
       />
     </div>
     <svg
-      class="absolute top-[-1px] start-0 fill-base dark:fill-base-dark-800"
+      class="absolute top-[-1px] start-0 fill-base-600 dark:fill-secondary-900"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 400 75"
     >
       <path d="M0 0l400 0L400 75 0 25Z"></path>
     </svg>
     <p
-      class="absolute top-0 end-0 m-3 start-end text-sm text-primary-900/50 dark:text-primary/70 font-semibold"
+      class="absolute top-0 end-0 m-3 start-end text-sm text-primary-900/50 dark:text-accent/70 font-semibold"
     >
       {location}
     </p>
     <svg
-      class="absolute bottom-[-1px] start-0 fill-base dark:fill-base-dark-800"
+      class="absolute bottom-[-1px] start-0 fill-base-600 dark:fill-secondary-900"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 -50 400 50"
     >
@@ -59,7 +59,7 @@ const { title, description, location, visual } = Astro.props;
       </div>
     </div>
     <div class="self-end mt-4">
-      <Button variant="outline" color="primary"> Read more</Button>
+      <Button variant="outline" color="cta"> Leer más</Button>
     </div>
   </div>
 </div>
