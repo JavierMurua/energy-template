@@ -1,6 +1,7 @@
 ---
+// src/components/sections/hero/Hero.astro
 import { Image, Picture } from "astro:assets";
-import heroImg from "./assets/wind3.jpg";
+import heroImg from "./assets/playa.jpg";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -8,15 +9,14 @@ import Title from "../../shared/Title.astro";
 import LazyImage from "../../shared/LazyImage.astro";
 
 const heroSection = {
-  headline1: "Powering",
-  headline2: "Tomorrow,",
-  headline3: "Sustainably",
-  headline4: "Today!",
-  subheading1: "Join us in the green energy revolution",
-  subheading2: "and be part of a sustainable future",
-  subheading3: "for generations to come.",
-  buttonText: "Get Powered Today!",
-  backgroundImage: "hero-background-image.jpg",
+  headline1: "Viajar",
+  headline2: "es la forma",
+  headline3: "más hermosa",
+  headline4: "de crecer",
+  subheading1: "Cada destino es una nueva versión",
+  subheading2: "de ti mismo esperando",
+  subheading3: "ser descubierta.",
+  buttonText: "Descubre tu próxima aventura",
 };
 
 export interface Props {
@@ -26,44 +26,51 @@ export interface Props {
 const { className = "" } = Astro.props;
 ---
 
-<section class=`relative  ${className} w-full h-[80vh]` id="hero">
-  <div class="w-full h-[80vh] pt-[100px]">
-    <div
-      class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
-    >
-      <div class="justify-center flex flex-col text-center md:ml-auto">
-        <Title className="">
-          {heroSection.headline1}
-          <GradiantText
-            >{" " + heroSection.headline2}
-            <br />
-            {" " + heroSection.headline3}
-          </GradiantText>{heroSection.headline4}
-        </Title>
-        <SubTitle className=" mt-10 leading-9 italic">
-          {heroSection.subheading1}
-          <br />
-          {heroSection.subheading2}<br />
-          {heroSection.subheading3}
-        </SubTitle>
-        <div class="pt-10">
-          <CtaButton>{heroSection.buttonText}</CtaButton>
-        </div>
+<section
+  id="hero"
+  role="region"
+  aria-labelledby="hero-title"
+  class={`relative ${className} w-full bg-base-200 dark:bg-secondary-900`}
+>
+  <div class="flex flex-col-reverse md:grid md:grid-cols-2 w-full min-h-[60vh] md:min-h-[80vh]">
+    <!-- Texto principal -->
+    <div class="flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 sm:px-10 lg:px-16 py-12">
+      <Title id="hero-title" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight pt-20">
+        {heroSection.headline1}{" "}
+        <GradiantText>
+          {heroSection.headline2}<br />
+          {heroSection.headline3}
+        </GradiantText>{" "}
+        {heroSection.headline4}
+      </Title>
+
+      <SubTitle className="mt-6 text-base-dark dark:text-base-50 sm:text-lg md:text-xl italic leading-relaxed max-w-xl">
+        {heroSection.subheading1}<br />
+        {heroSection.subheading2}<br />
+        {heroSection.subheading3}
+      </SubTitle>
+
+      <div class="mt-8">
+        <CtaButton>{heroSection.buttonText}</CtaButton>
       </div>
-      <div class="flex relative pt-10 md:p-0">
-        <LazyImage
-          src={heroImg}
-          alt="A picture of a wind turbine."
-          className="w-full h-full object-cover"
-        />
-        <svg
-          class="fill-base-100 dark:fill-base-dark-900 z-10 absolute top-0 start-0 h-full hidden md:block"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 500 400"
-        >
-          <path d="M0 0l0 400L100 0Z"> </path>
-        </svg>
-      </div>
+    </div>
+
+    <!-- Imagen -->
+    <div class="relative w-full h-64 sm:h-80 md:h-full">
+      <LazyImage
+        src={heroImg}
+        alt="Imagen de un aerogenerador."
+        className="w-full h-full object-cover"
+      />
+
+      <!-- SVG decorativo solo visible en pantallas medianas en adelante -->
+      <svg
+        class="fill-base-200 dark:fill-secondary-900 z-10 absolute top-0 start-0 h-full hidden md:block"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 500 400"
+      >
+        <path d="M0 0l0 400L100 0Z" />
+      </svg>
     </div>
   </div>
 </section>
