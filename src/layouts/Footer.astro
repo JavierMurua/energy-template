@@ -6,81 +6,77 @@ import Paragraph from "../components/shared/Paragraph.astro";
 
 const footerNav1 = [
   {
-    itemText: "Marketing",
+    itemText: "Europa",
     itemLink: "#",
   },
   {
-    itemText: "Analylitics",
+    itemText: "Asia",
     itemLink: "#",
   },
   {
-    itemText: "Commerce",
+    itemText: "Brasil",
     itemLink: "#",
   },
   {
-    itemText: "Insights",
+    itemText: "El Caribe",
     itemLink: "#",
   },
 ];
 
 const footerSupport = [
   {
-    itemText: "Pricing",
+    itemText: "Descuentos",
     itemLink: "#",
   },
   {
-    itemText: "Guides",
+    itemText: "Últimos lugares",
     itemLink: "#",
   },
   {
-    itemText: "FAQ",
+    itemText: "Recitales",
     itemLink: "#",
   },
   {
-    itemText: "Contact",
+    itemText: "Próximamente",
     itemLink: "#",
   },
 ];
 
 const footerCompany = [
   {
-    itemText: "About",
+    itemText: "Parejas",
     itemLink: "#",
   },
   {
-    itemText: "Blog",
+    itemText: "Amigos",
     itemLink: "#",
   },
   {
-    itemText: "Jobs",
+    itemText: "Sólo mujeres",
     itemLink: "#",
   },
   {
-    itemText: "Parteners",
-    itemLink: "#",
-  },
-  {
-    itemText: "Jobs",
+    itemText: "Familias",
     itemLink: "#",
   },
 ];
 const footerLegal = [
   {
-    itemText: "Claim",
+    itemText: "Blog",
     itemLink: "#",
   },
   {
-    itemText: "Privacy",
+    itemText: "Nosotros",
     itemLink: "#",
   },
   {
-    itemText: "Terms",
+    itemText: "Políticas",
     itemLink: "#",
   },
 ];
 ---
 
-<div class="relative mt-16 bg-base-200 dark:bg-base-dark-800">
+<div class="relative mt-16 bg-base-200 dark:bg-secondary-900">
   <footer class="relative pt-28 rounded-t-3xl">
     <Container className="pb-8 relative overflow-auto ">
       <div
@@ -90,18 +86,17 @@ const footerLegal = [
           <div class="h-full">
             <a href="#" class="relative flex items-center gap-3">
               <div class="inline-flex text-lg font-semibold text-heading-1">
-                [Company Name]
+                VyT Exclusive
               </div>
             </a>
             <Paragraph className={"mt-8"}>
-              Elevating Sustainability through Innovative Solutions for a
-              Greener Tomorrow.
+              Más que una agencia de viajes, somos creadores de experiencias inolvidables
             </Paragraph>
           </div>
 
           <!-- social links -->
-          <div class="min-h-max flex items-center gap-4 text-heading-3 mt-8">
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+          <div class="min-h-max flex items-center gap-4 text-heading-3 mt-8 text-accent-400">
+            <a href="#" class="transition hover:text-heading-1 hover:scale-105 hover:text-cta-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -114,10 +109,10 @@ const footerLegal = [
                   d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
                 ></path>
               </svg>
-              <span class="sr-only">social link</span>
+              <span class="sr-only">Redes sociales</span>
             </a>
 
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+            <a href="#" class="transition hover:text-heading-1 hover:scale-105 hover:text-cta-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -133,7 +128,7 @@ const footerLegal = [
               <span class="sr-only">social link</span>
             </a>
 
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+            <a href="#" class="transition hover:text-heading-1 hover:scale-105 hover:text-cta-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -149,7 +144,7 @@ const footerLegal = [
               <span class="sr-only">social link</span>
             </a>
 
-            <a href="#" class="transition hover:text-heading-1 hover:scale-105">
+            <a href="#" class="transition hover:text-heading-1 hover:scale-105 hover:text-cta-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -168,13 +163,13 @@ const footerLegal = [
         </div>
 
         <GroupFooterNav>
-          <FooterNav title={"Company"} navItems={footerCompany} />
-          <FooterNav title={"Solutions"} navItems={footerNav1} />
+          <FooterNav title={"Tu viaje"} navItems={footerCompany} />
+          <FooterNav title={"Destinos"} navItems={footerNav1} />
         </GroupFooterNav>
 
         <GroupFooterNav>
-          <FooterNav title={"Support"} navItems={footerSupport} />
-          <FooterNav title={"Ressources"} navItems={footerLegal} />
+          <FooterNav title={"Promociones"} navItems={footerSupport} />
+          <FooterNav title={"Información"} navItems={footerLegal} />
         </GroupFooterNav>
       </div>
     </Container>
@@ -184,13 +179,13 @@ const footerLegal = [
           class="flex justify-between items-center gap-6 md:text-lg text-heading-3"
         >
           <div>
-            &copy; <span id="year"></span> [Company Name]. All right reserved
+            &copy; <span id="year"></span> VyT Exclusive. Todos los derechos reservados
           </div>
           <div>
-            Made by <a
-              href="https://github.com/vbartalis"
+            Potenciado por <a
+              href="https:muruadev.com"
               target="_blank"
-              class="font-semibold">vbartalis</a
+              class="font-semibold text-accent">Murúa Dev</a
             >
           </div>
         </div>
