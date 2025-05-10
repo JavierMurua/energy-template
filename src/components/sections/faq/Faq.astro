@@ -1,0 +1,36 @@
+---
+// src/components/faq/FaqSection.astro
+import Container from "../../shared/Container.astro"; // Assuming this is correct path
+import GradiantText from "../../shared/GradiantText.astro"; // Assuming this is correct path
+import SubTitle2 from "../../shared/SubTitle2.astro"; // Assuming this is correct path
+import Title2 from "../../shared/Title2.astro"; // Assuming this is correct path
+import { faqSection } from "./data"; // Import your FAQ data
+import FaqItem from "./components/FaqItem.astro"; // Import the individual FAQ item component
+
+export interface Props {
+  className?: string;
+  faqs?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<section id="faq" class={className}>
+  <Container
+    className="mx-auto flex flex-col items-center justify-center text-center mb-10 md:mb-12"
+  >
+    <Title2>{faqSection.title}</Title2>
+    <SubTitle2>
+      <GradiantText>{faqSection.subheading1_1}</GradiantText>
+      {faqSection.subheading1_2}
+    </SubTitle2>
+  </Container>
+  <Container className="space-y-6 md:space-y-8">
+    {/* Changed faqSection.faqs.map to faqSection.questions.map */}
+    {
+      faqSection.questions.map((item) => (
+        <FaqItem question={item.question} answer={item.answer} />
+      ))
+    }
+  </Container>
+</section>

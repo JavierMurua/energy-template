@@ -1,0 +1,38 @@
+---
+// src/components/faq/FaqItem.astro
+// import Paragraph from "../../shared/Paragraph.astro"; // Assuming you have a Paragraph component
+import Title3 from "../../../shared/Title3.astro"; // Assuming you have a Title3 component
+
+export interface Props {
+  question: string;
+  answer: string;
+}
+
+const { question, answer } = Astro.props;
+---
+
+<details
+  class="group overflow-hidden rounded-lg bg-base-600 dark:bg-secondary-900 shadow-lg dark:shadow-dark ring-1 ring-black/5 px-6 py-4 cursor-pointer"
+>
+  <summary class="flex justify-between items-center py-2 focus:outline-none">
+    <h5
+          class="block text-xl font-semibold leading-snug text-primary-900 dark:text-accent-light"
+        >
+          {question}
+        </h5>
+    <svg class="fill-current transform transition-transform duration-200 group-open:rotate-180" width="20" height="20" viewBox="0 0 20 20">
+      <path d="M10 15l-5-5 1.41-1.41L10 12.17l3.59-3.58L15 10l-5 5z"/>
+    </svg>
+  </summary>
+  <div class="pt-2 pb-2 opacity-80 text-md leading-relaxed">
+    {answer}
+  </div>
+</details>
+
+<style>
+  /* Hide the default marker */
+  details > summary::marker,
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
